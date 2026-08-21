@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    int marks[] = {75, 82, 68, 90, 55, 73, 88, 61, 95, 70};
+    int n = 10;
+    int i, sum = 0;
+    float average;
+
+    printf("Student Marks Dataset:\n");
+
+    for(i = 0; i < n; i++)
+    {
+        printf("Student %d: %d\n", i + 1, marks[i]);
+        sum = sum + marks[i];
+    }
+
+    average = (float)sum / n;
+
+    printf("\nTotal Marks = %d\n", sum);
+    printf("Average Marks = %.2f\n", average);
+
+    return 0;
+}
